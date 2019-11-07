@@ -1,0 +1,384 @@
+html {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	letter-spacing: .06em;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-size: 100%;
+}
+
+.home-bg {
+	background-image: url("ArtsyMeHalf.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	background-color: black;
+
+	text-align: center;
+	justify-content: center;
+}
+
+.supper-bg {
+	background-image: url("supper/supper-bg2.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+}
+
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Raleway Light', 'Raleway', 'Roboto', "Segoe UI", sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	line-height: 1.54;
+	color: #d9d9d9;
+
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: 100%;
+}
+
+p {
+	font-family: 'Open Sans Light', 'Open Sans', 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 1.1em;
+	margin: 0 5rem;
+	text-align: left;
+}
+
+.contact {
+
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto;
+	align-items: flex-start;
+	justify-content: space-around;
+	overflow: hidden;
+
+	margin: 0 4rem;
+	padding: 4rem 5rem;
+	background-color: rgba(255,255,255,0.125);
+}
+
+.contact p {
+	letter-spacing: 0.2em
+}
+
+.gallery-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	margin: 0 5rem;
+}
+
+hr {
+	margin-left: 4em;
+	text-align: left;
+	width: 5em;
+	margin-bottom: 2.5em;
+}
+
+.gallery-col {
+	flex: 30%;
+	max-width: 30%;
+	padding: 0 4px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.gallery-col img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.gallery-col img:hover {
+	transform: scale(1.05,1.05);
+	transition: all 0.3s ease;
+}
+
+.gallery-label {
+	background-color: rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 800px) {
+	.gallery-col {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.gallery-col {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.home-nav {
+	font-family: 'Open Sans Light', 'Open Sans', 'Roboto', sans-serif;
+	font-size: 1.2em;
+	letter-spacing: .5ex;
+	line-height: 2;
+	margin: 0;
+}
+
+#me {
+	max-width: 100%;
+}
+
+.about {
+	width: 50%;
+	flex: 1;
+}
+
+.about-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+	.about {
+		flex: 100%;
+		max-width: 100%;
+	}
+	#me {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.show-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto;
+	align-items: flex-start;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem 5rem 5rem;
+	position: relative;
+}
+
+.port-item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.port-overlay {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+	.port-img {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.port-textbox {
+		text-align: center;
+		flex: 100%;
+		max-width: 100%;
+	}
+	.port-hidden:hover {
+		display: none;
+	}
+	.port-item:hover {
+	}
+	.port-overlay:hover {
+	}
+}
+
+.port-overlay:hover {
+	background-color: rgba(255,255,255,0.0625);
+	transition: all 0.3s ease;
+}
+
+.port-item:hover {
+	transform: scale(1.01,1.01);
+	transition: all 0.3s ease;
+}
+
+.port-item:hover .port-hidden {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+.port-hidden {
+	display: none;
+	margin-left: 0;
+}
+
+.port-img {
+	max-width: 50%;
+}
+
+.port-textbox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 1em;
+	max-width: 75%;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.pdf {
+	flex-grow: 1;
+	border: none;
+	width: 90%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+footer {
+	text-align: center;
+	justify-content: center;
+	flex-grow: 0;
+	padding: 0;
+	padding-bottom: 1em
+}
+
+footer p {
+	text-align: center;
+	letter-spacing: .5ex;
+	font-size: 0.825em;
+}
+
+
+h2, h3, h4, h5, h6 {
+	display: flex;
+	align-items: center;
+	line-height: 1.3;
+}
+
+h4 {
+	font-size: 2em;
+	letter-spacing: 0.125em;
+	margin-left: 4rem;
+}
+
+h5 {
+	font-size: 1.25em;
+	letter-spacing: 0.125em;
+	margin-left: 4rem;
+}
+
+h1 {
+	font-family: 'Raleway';
+	font-weight: 200;
+	letter-spacing: 0.125em;
+	font-size: 3.625em;
+	margin-bottom: 0;
+}
+
+h2 {
+	letter-spacing: 0.125em;
+	font-size: 3em;
+	font-weight: 200;
+	margin-left: 4rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.375rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+a:hover {
+	color: #ee7777;
+	transition: color .2s ease;
+	-webkit-transition: color .2s ease;
+}
+
+i {
+	margin: 0 1ex;
+}
+
+header {
+	padding: .75em 1em;
+	background-color: black;
+}
+
+nav.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 1em;
+}
+
+.logo {
+	letter-spacing: 0.25em;
+	float: left;
+}
+
+.nl {
+	display: inline-block;
+	letter-spacing: 0.125em;
+}
+
+.nl a{
+	margin-left: 1em;
+}
+
+.nav {
+	font-family: 'Raleway', 'Roboto', sans-serif;
+}
+
+#social {
+	margin: 0 0 1.2em 0;
+	padding: 0;
+}
+
+
+#title {
+	letter-spacing: .25em;
+	text-align: center;	
+	margin-right: 0;
+	padding: 0;
+}
+
+#subtitle {
+	letter-spacing: .25em;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	text-align: center;
+}
