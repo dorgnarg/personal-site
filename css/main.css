@@ -166,6 +166,29 @@ hr {
 	align-items: flex-start;
 }
 
+
+@media only screen and (max-width: 600px) {
+	.contact-bg{
+		background-image: none;
+		margin-left: -2rem;
+		margin-right: -4rem;
+	}
+	.contact{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 4.5em 0 2.5em;
+		padding: 2em 0;
+	}
+	.contact p {
+		margin: 2em 0;
+	}
+	.contact-label {
+		display: none;
+	}
+
+}
+
 @media only screen and (max-width: 600px) {
 	.resume-bg{
 		background-image: none;
