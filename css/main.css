@@ -166,6 +166,17 @@ hr {
 	align-items: flex-start;
 }
 
+@media only screen and (max-width: 600px) {
+	.resume-bg{
+		background-image: none;
+		margin-left: -2rem;
+		margin-right: -4rem;
+	}
+	.resume-content{
+		margin: 0 4.5em 0 2.5em;
+		text-align: center;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	.about-bg{
@@ -195,6 +206,17 @@ hr {
 	flex-direction: column;
 	flex: 1 auto;
 	align-items: flex-start;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.resume-content {
+	display: flex;
+	flex-direction: column;
+	max-height: 100%;
+	height: 100%;
+	flex: 1 auto;
+	align-items: center;
 	justify-content: center;
 	overflow: hidden;
 }
@@ -290,7 +312,6 @@ hr {
 }
 
 .pdf {
-	flex-grow: 1;
 	border: none;
 	width: 90%;
 	height: 100%;
