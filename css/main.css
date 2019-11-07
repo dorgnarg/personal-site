@@ -29,10 +29,16 @@ html {
 
 
 @media only screen and (max-width: 600px) {
-	.supper-bg {
+	.supper-bg{
 		background-image: none;
 		margin-left: -2rem;
-		margin-right: -3rem;
+		margin-right: -4rem;
+	}
+	.show-content {
+		margin-left: -1rem;
+	}
+	.gallery-label {
+		margin-left: 5rem;
 	}
 }
 
