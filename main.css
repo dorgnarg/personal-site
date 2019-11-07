@@ -212,6 +212,7 @@ hr {
 	}
 	.port-hidden:hover {
 		display: none;
+		-webkit-line-clamp: 1;
 	}
 	.port-item:hover {
 	}
