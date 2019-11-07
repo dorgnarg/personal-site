@@ -150,8 +150,13 @@ hr {
 	max-width: 100%;
 }
 
-.about {
-	width: 50%;
+.about-text {
+	width: 100%;
+	flex: 1;
+}
+
+.about-img {
+	width: 100%;
 	flex: 1;
 }
 
@@ -161,14 +166,27 @@ hr {
 	align-items: flex-start;
 }
 
-@media screen and (max-width: 600px) {
-	.about {
-		flex: 100%;
-		max-width: 100%;
+
+@media only screen and (max-width: 600px) {
+	.about-bg{
+		background-image: none;
+		margin-left: -2rem;
+		margin-right: -4rem;
 	}
-	#me {
-		flex: 100%;
+	.about-content {
+		margin-left: -1rem;
+		flex-wrap: wrap;
+	}
+	.about-text {
 		max-width: 100%;
+		width: 100%;
+		flex-grow: 2;
+		break-after: always;
+	}
+	.about-img {
+		max-width: 100%;
+		width: 100%;
+		flex-basis: 100%;
 	}
 }
 
