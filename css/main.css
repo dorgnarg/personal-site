@@ -134,19 +134,26 @@ nav.main-nav {	/* Header navigation menu */
 	font-size: 1.5rem;
 }
 
+#new-menu a {
+	letter-spacing: 0.125em;
+	margin-left: 1em;
+	line-height: 3;
+}
+
 
 @media only screen and (max-width: 600px) {
 	.nl a {
 		display: none
 	}
 	.nl a.icon {
+		float: right;
 		display: block;
 	}
 
 	.nl.responsive {
 		position: relative;
 	}
-	.nl.responsive a.icon {
+	.nl.responsive .icon {
 		position: absolute;
 		right: 0;
 		top: 0;
