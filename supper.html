@@ -3,10 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/eaf29463d8.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width:
-		   600px)" href="css/phone.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://kit.fontawesome.com/eaf29463d8.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet"
 	      href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet"
@@ -22,12 +20,17 @@
 			<h3><a href="index.html" class="logo" id="name">
 				Daniel Moore
 			</a></h3>
-			<div class="nl nav">
-			<a href="index.html">Home</a>
-			<a href="about.html">About</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="resume.html">Resume</a>
-			<a href="contact.html">Contact</a>
+			<script src="js/menu.js"></script>
+			<div class="nl" id="js-menu">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="resume.html">Resume</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon"
+						      onclick="menu()">
+					<i class="fas fa-bars"></i>
+				</a>
 			</div>
 		</nav>
 	</header>
