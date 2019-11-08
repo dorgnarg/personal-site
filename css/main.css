@@ -1,3 +1,8 @@
+
+/*
+ *	SITE-WIDE DECLARATIONS
+ */
+
 html {
 	margin: 0;
 	padding: 0;
@@ -8,26 +13,6 @@ html {
 	min-height: 100vh;
 	font-size: 100%;
 }
-
-.home-bg {
-	background-image: url("../ArtsyMeHalf.jpg");
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: cover;
-	background-color: black;
-
-	text-align: center;
-	justify-content: center;
-}
-
-.supper-bg {
-	background-image: url("../supper/supper-bg2.jpg");
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: cover;
-}
-
-
 
 body {
 	background-color: black;
@@ -53,11 +38,419 @@ p {
 	font-family: 'Open Sans Light', 'Open Sans', 'Roboto', sans-serif;
 	font-weight: 200;
 	font-size: 1.1em;
-	margin: 0 5rem;
+	margin: 0 2rem;
 	text-align: left;
 }
 
-.contact {
+hr {
+	margin-left: 2rem;
+	text-align: left;
+	width: 5em;
+	margin-bottom: 2.5em;
+}
+
+h1 {
+	font-family: 'Raleway';
+	font-weight: 200;
+	letter-spacing: 0.125em;
+	font-size: 3.625em;
+	margin-bottom: 0;
+}
+
+h2 {
+	letter-spacing: 0.125em;
+	font-size: 3em;
+	font-weight: 200;
+	margin-bottom: 0;
+	margin-left: 2rem;
+}
+
+h3 {
+	font-size: 1.375rem;
+}
+
+
+h4 {
+	font-size: 2em;
+	letter-spacing: 0.125em;
+	margin-left: 2rem;
+}
+
+h5 {
+	font-size: 1.25em;
+	letter-spacing: 0.125em;
+	margin-left: 2rem;
+}
+
+h2, h3, h4, h5, h6 {
+	display: flex;
+	align-items: center;
+	line-height: 1.3;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+a:hover {
+	color: #ee7777;
+	transition: color .2s ease;
+	-webkit-transition: color .2s ease;
+}
+
+i {		/* Icons */
+	margin: 0 1ex;
+}
+
+
+
+
+/*
+ *	HEADER & FOOTER
+ */
+
+header {	/* The whole header */
+	padding: .75em 1em;
+	background-color: black;
+}
+
+.nav {		/* Technically all navigators but also the header one */
+	font-family: 'Raleway', 'Roboto', sans-serif;
+}
+
+nav.main-nav {	/* Header navigation menu */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 1em;
+}
+
+.logo {		/* Home link/name/logo on the LHS */
+	letter-spacing: 0.25em;
+	float: left;
+}
+
+.nl {		/* Navigation links container */
+	display: inline-block;
+	letter-spacing: 0.125em;
+}
+
+.nl a{		/* Navigation links themselves */
+	margin-left: 1em;
+}
+
+
+footer {	/* The whole footer */
+	text-align: center;
+	justify-content: center;
+	flex-grow: 0;
+	padding: 0;
+	padding-bottom: 1em
+}
+
+footer p {	/* The text in the footer */
+	text-align: center;
+	letter-spacing: .5ex;
+	font-size: 0.825em;
+}
+
+
+
+/* 
+ *	HOMEPAGE
+ */
+
+.home-bg {	/* Background image and container */
+	background-image: url("../ArtsyMeHalf.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	background-color: black;
+
+	text-align: center;
+	justify-content: center;
+}
+
+.content {	/* Container for the main page content & footer */
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#social {	/* Index contact icons links */
+	margin: 0 0 1.2em 0;
+	padding: 0;
+}
+
+
+#title {	/* Big title header */
+	letter-spacing: .25em;
+	text-align: center;	
+	margin-right: 0;
+	padding: 0;
+}
+
+#subtitle {	/* Position/tagline/etc. under the title */
+	letter-spacing: .25em;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+.home-nav {	/* Navigation links on the homepage */
+	font-family: 'Open Sans Light', 'Open Sans', 'Roboto', sans-serif;
+	font-size: 1.2em;
+	letter-spacing: .5ex;
+	line-height: 2;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.home-nav {
+		line-height: 2.5;
+		font-size: 1.325em;
+	}
+}
+
+
+
+/*
+ *	ABOUT PAGE
+ */
+
+.about-content {/* Container for the bio/pic/etc */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.about-text {	/* Container for bio text */
+	width: 100%;
+	flex: 1;
+}
+
+.about-img {	/* Container for the bio image */
+	width: 100%;
+	flex: 1;
+}
+
+
+#me {		/* The actual bio image */
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.about-bg{
+		background-image: none;
+	}
+	.about-content {
+		flex-wrap: wrap;
+	}
+	.about-text {
+		max-width: 100%;
+	}
+	.about-img {
+		max-width: 100%;
+		flex-basis: 100%;
+	}
+}
+
+
+
+/*
+ *	PORTFOLIO PAGE
+ */
+
+.portfolio {	/* Container for main page content (not including title) */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem 5rem 5rem;
+	position: relative;
+}
+
+.port-item {	/* Container for each project, containing image and text */
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.port-item:hover {/* Each item should slowly get a little bigger on hover */
+	transform: scale(1.01,1.01);
+	transition: all 0.3s ease;
+}
+
+.port-overlay {	/* Overlay that covers port-item and changes on hover */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.port-overlay:hover {		/* Overlay should slowly get darker on hovr */
+	background-color: rgba(255,255,255,0.0625);
+	transition: all 0.3s ease;
+}
+
+
+.port-hidden {	/* Hidden text that gives a brief 1-2 sentence description */
+	display: none;
+	margin-left: 0;
+}
+
+.port-item:hover .port-hidden {	/* Show hidden text on hover */
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+.port-img {	/* Image for each portfolio item */
+	max-width: 50%;
+}
+
+.port-textbox {	/* Text box containing title and hidden text for each portfolio item */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 1em;
+	max-width: 75%;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 600px) {
+	.portfolio {
+		margin: 1rem;
+	}
+	.port-item:active .port-hidden {
+		display: hidden;
+	}
+}
+
+
+
+/*
+ *	PROJECT PAGES
+ */
+
+.supper-bg {	/* Just the background for the Unsettled Supper one */
+	background-image: url("../supper/supper-bg2.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+}
+
+.show-content {	/* Main container for the project pages, excluding title */
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto;
+	align-items: flex-start;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.gallery-row {	/* Each row of the gallery (container for the columns) */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 4px;
+	margin: 0 2rem;
+}
+
+.gallery-col {	/* Each column of the gallery (container for imgs) */
+	flex: 30%;
+	max-width: 30%;
+	padding: 0 4px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.gallery-col img { /* Each image in the gallery */
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.gallery-col img:hover { /* Make the images get a littl bigger when you hover over them */
+	transform: scale(1.05,1.05);
+	transition: all 0.3s ease;
+}
+
+.gallery-label {	/* The section title for the gallery */
+	background-color: rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 600px) {
+	.supper-bg{
+		background-image: none;
+	}
+	.gallery-col {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.gallery-col {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+
+
+/*
+ *	RESUME PAGE
+ */
+
+.resume-content { /* Main container for the page (excluding title) */
+	display: flex;
+	flex-direction: column;
+	max-height: 100%;
+	height: 100%;
+	flex: 1 auto;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.pdf {		/* Spacing for the resume itself */
+	border: none;
+	width: 90%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+@media only screen and (max-width: 600px) {
+	.resume-bg {
+		background-image: none;
+	}
+	.resume-bg h2{
+		margin-left: 2rem;
+	}
+	.resume-bg hr {
+		margin-left: 2rem;
+	}
+	.resume-content{
+		margin: 0 2em 0 4em;
+		text-align: center;
+	}
+}
+
+
+
+/*
+ *	CONTACT PAGE
+ */
+
+.contact {	/* Main page container (excluding title) */
 
 	display: flex;
 	flex-direction: column;
@@ -71,87 +464,10 @@ p {
 	background-color: rgba(255,255,255,0.125);
 }
 
-.contact p {
+.contact p {	/* The wrapper for the icons/text on the page */
 	letter-spacing: 0.2em
 }
 
-.gallery-row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	margin: 0 5rem;
-}
-
-hr {
-	margin-left: 4em;
-	text-align: left;
-	width: 5em;
-	margin-bottom: 2.5em;
-}
-
-.gallery-col {
-	flex: 30%;
-	max-width: 30%;
-	padding: 0 4px;
-	background-color: rgba(0,0,0,0.5);
-}
-
-.gallery-col img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
-}
-
-.gallery-col img:hover {
-	transform: scale(1.05,1.05);
-	transition: all 0.3s ease;
-}
-
-.gallery-label {
-	background-color: rgba(0,0,0,0.75);
-}
-
-@media screen and (max-width: 800px) {
-	.gallery-col {
-		flex: 50%;
-		max-width: 50%;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.gallery-col {
-		flex: 100%;
-		max-width: 100%;
-	}
-}
-
-.home-nav {
-	font-family: 'Open Sans Light', 'Open Sans', 'Roboto', sans-serif;
-	font-size: 1.2em;
-	letter-spacing: .5ex;
-	line-height: 2;
-	margin: 0;
-}
-
-#me {
-	max-width: 100%;
-}
-
-.about-text {
-	width: 100%;
-	flex: 1;
-}
-
-.about-img {
-	width: 100%;
-	flex: 1;
-}
-
-.about-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-}
 
 @media only screen and (max-width: 600px) {
 	.contact-bg{
@@ -177,297 +493,4 @@ hr {
 		display: none;
 	}
 
-}
-
-@media only screen and (max-width: 600px) {
-	.resume-bg {
-		background-image: none;
-	}
-	.resume-bg h2{
-		margin-left: 2rem;
-	}
-	.resume-bg hr {
-		margin-left: 2rem;
-	}
-	.resume-content{
-		margin: 0 2em 0 4em;
-		text-align: center;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.about-bg{
-		background-image: none;
-		margin-left: -2rem;
-		margin-right: -4rem;
-	}
-	.about-content {
-		margin-left: -1rem;
-		flex-wrap: wrap;
-	}
-	.about-text {
-		max-width: 100%;
-		width: 100%;
-		flex-grow: 2;
-		break-after: always;
-	}
-	.about-img {
-		max-width: 100%;
-		width: 100%;
-		flex-basis: 100%;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.supper-bg{
-		background-image: none;
-		margin-left: -2rem;
-		margin-right: -4rem;
-	}
-	.show-content {
-		margin-left: -1rem;
-	}
-	.gallery-label {
-		margin-left: 5rem;
-	}
-}
-
-.show-content {
-	display: flex;
-	flex-direction: column;
-	flex: 1 auto;
-	align-items: flex-start;
-	justify-content: center;
-	overflow: hidden;
-}
-
-.resume-content {
-	display: flex;
-	flex-direction: column;
-	max-height: 100%;
-	height: 100%;
-	flex: 1 auto;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-
-.content {
-	display: flex;
-	flex-direction: column;
-	flex: 1 auto;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-
-
-.portfolio {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5rem 5rem 5rem;
-	position: relative;
-}
-
-.port-item {
-	display: flex;
-	align-items: center;
-	width: 100%;
-}
-
-.port-overlay {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-}
-
-
-@media screen and (max-width: 600px) {
-	.port-bg {
-		margin: 0;
-	}
-	.port-bg h2{
-		margin-left: 2rem
-	}
-	.port-bg hr {
-		margin-left: 2rem
-	}
-	.portfolio {
-		margin: 1rem;
-	}
-	.port-img {
-		flex: 100%;
-		max-width: 100%;
-	}
-	.port-textbox {
-		flex: 100%;
-		max-width: 100%;
-	}
-}
-
-.port-overlay:hover {
-	background-color: rgba(255,255,255,0.0625);
-	transition: all 0.3s ease;
-}
-
-.port-item:hover {
-	transform: scale(1.01,1.01);
-	transition: all 0.3s ease;
-}
-
-.port-item:hover .port-hidden {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 5;
-	-webkit-box-orient: vertical;
-}
-
-.port-hidden {
-	display: none;
-	margin-left: 0;
-}
-
-.port-img {
-	max-width: 50%;
-}
-
-.port-textbox {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding-left: 1em;
-	max-width: 75%;
-	overflow:hidden;
-	text-overflow: ellipsis;
-}
-
-.pdf {
-	border: none;
-	width: 90%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-
-footer {
-	text-align: center;
-	justify-content: center;
-	flex-grow: 0;
-	padding: 0;
-	padding-bottom: 1em
-}
-
-footer p {
-	text-align: center;
-	letter-spacing: .5ex;
-	font-size: 0.825em;
-}
-
-
-h2, h3, h4, h5, h6 {
-	display: flex;
-	align-items: center;
-	line-height: 1.3;
-}
-
-h4 {
-	font-size: 2em;
-	letter-spacing: 0.125em;
-	margin-left: 4rem;
-}
-
-h5 {
-	font-size: 1.25em;
-	letter-spacing: 0.125em;
-	margin-left: 4rem;
-}
-
-h1 {
-	font-family: 'Raleway';
-	font-weight: 200;
-	letter-spacing: 0.125em;
-	font-size: 3.625em;
-	margin-bottom: 0;
-}
-
-h2 {
-	letter-spacing: 0.125em;
-	font-size: 3em;
-	font-weight: 200;
-	margin-left: 4rem;
-	margin-bottom: 0;
-}
-
-h3 {
-	font-size: 1.375rem;
-}
-
-a {
-	color: inherit;
-	text-decoration: inherit;
-}
-
-a:hover {
-	color: #ee7777;
-	transition: color .2s ease;
-	-webkit-transition: color .2s ease;
-}
-
-i {
-	margin: 0 1ex;
-}
-
-header {
-	padding: .75em 1em;
-	background-color: black;
-}
-
-nav.main-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 1em;
-}
-
-.logo {
-	letter-spacing: 0.25em;
-	float: left;
-}
-
-.nl {
-	display: inline-block;
-	letter-spacing: 0.125em;
-}
-
-.nl a{
-	margin-left: 1em;
-}
-
-.nav {
-	font-family: 'Raleway', 'Roboto', sans-serif;
-}
-
-#social {
-	margin: 0 0 1.2em 0;
-	padding: 0;
-}
-
-
-#title {
-	letter-spacing: .25em;
-	text-align: center;	
-	margin-right: 0;
-	padding: 0;
-}
-
-#subtitle {
-	letter-spacing: .25em;
-	margin: 0 0 1.5em 0;
-	padding: 0;
-	text-align: center;
 }
