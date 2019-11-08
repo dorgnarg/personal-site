@@ -28,19 +28,6 @@ html {
 }
 
 
-@media only screen and (max-width: 600px) {
-	.supper-bg{
-		background-image: none;
-		margin-left: -2rem;
-		margin-right: -4rem;
-	}
-	.show-content {
-		margin-left: -1rem;
-	}
-	.gallery-label {
-		margin-left: 5rem;
-	}
-}
 
 body {
 	background-color: black;
@@ -212,11 +199,10 @@ hr {
 	.about-bg{
 		background-image: none;
 		margin-left: -2rem;
-		margin-right: -2rem;
+		margin-right: -4rem;
 	}
 	.about-content {
 		margin-left: -1rem;
-		margin-right: -1rem;
 		flex-wrap: wrap;
 	}
 	.about-text {
@@ -229,6 +215,20 @@ hr {
 		max-width: 100%;
 		width: 100%;
 		flex-basis: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.supper-bg{
+		background-image: none;
+		margin-left: -2rem;
+		margin-right: -4rem;
+	}
+	.show-content {
+		margin-left: -1rem;
+	}
+	.gallery-label {
+		margin-left: 5rem;
 	}
 }
 
