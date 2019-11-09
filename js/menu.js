@@ -19,11 +19,15 @@ function createMenu() {
 function newMenu() {
 	var dropMenu = document.getElementById("new-menu");
 	if (dropMenu.innerHTML === "") {
+		//document.getElementById('hamburger').className = 'icon-clear';
+		document.getElementById('top-nav').classList.toggle('morphed');
 		for(var i=0; i<5; i++) {
 			dropMenu.appendChild(menuItems[i]);
 			dropMenu.appendChild(document.createElement('br'));
 		}
 	} else {
+		document.getElementById('top-nav').classList.toggle('morphed');
+		//document.getElementById('hamburger').className = 'icon-menu';
 		dropMenu.innerHTML = ""
 	}
 }
