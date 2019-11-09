@@ -1,8 +1,31 @@
-function newMenu() {
-	if (document.getElementById("new-menu").innerHTML === "") {
-		document.getElementById("new-menu").innerHTML =
-		'<a href="index.html">Home</a><br /><a href="about.html">About</a><br /><a href="portfolio.html">Portfolio</a><br /><a href="resume.html">Resume</a><br /><a href="contact.html">Contact</a>'
-	} else {
-		document.getElementById("new-menu").innerHTML = ""
+var menuText = ['Home', 'About', 'Portfolio', 'Resume', 'Contact'];
+var menuLinks = ['index.html', 'about.html', 'portfolio.html', 'resume.html', 'contact.html'];
+var menuItems = [];
+for(var i=0; i < 5; i++) {
+	menuItems.push(document.createElement('a'));
+	menuItems[i].href = menuLinks[i];
+	menuItems[i].innerText = menuText[i];
+}
+
+function createMenu() {
+	var menu = document.getElementById('top-nav');
+	if(!window.matchMedia("(max-width: 600px)").matches) {
+		for(var i=0; i<5; i++) {
+			menu.appendChild(menuItems[i]);
+		}
 	}
 }
+
+function newMenu() {
+	var dropMenu = document.getElementById("new-menu");
+	if (dropMenu.innerHTML === "") {
+		for(var i=0; i<5; i++) {
+			dropMenu.appendChild(menuItems[i]);
+			dropMenu.appendChild(document.createElement('br'));
+		}
+	} else {
+		dropMenu.innerHTML = ""
+	}
+}
+
+window.onload = createMenu();
