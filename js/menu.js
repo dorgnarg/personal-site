@@ -1,5 +1,5 @@
 var menuText = ['Home', 'About', 'Portfolio', 'Resume', 'Contact'];
-var menuLinks = ['index.html', 'about.html', 'portfolio.html', 'resume.html', 'contact.html'];
+var menuLinks = ['index', 'about', 'portfolio', 'resume', 'contact'];
 var menuItems = [];
 for(var i=0; i < 5; i++) {
 	menuItems.push(document.createElement('a'));
