@@ -3,23 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet"
-	      href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel="stylesheet"
-	      href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet"
-	      href="https://fonts.googleapis.com/css?family=Open Sans">
+	      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway">
 	<title>Daniel Moore :: An Unsettled Supper</title>
 </head>
 <body>
 	<!--Header-->
 	<header>
 		<nav class="main-nav">
-			<h3><a href="index.html" class="logo" id="name">
+			<a href="index.html" class="logo" id="name">
 				Daniel Moore
-			</a></h3>
+			</a>
 			<div id="top-nav" class="nl nav">
 				<a href="javascript:void(0);" class="icons"
 				aria-label="Mobile menu" onclick="newMenu()">
@@ -39,7 +35,7 @@
 	<!--Main Content-->
 	<div class="supper-bg">
 	<h2>An Unsettled Supper</h2>
-	<h5>Written by Nicholas Tran</h5>
+	<h3>Written by Nicholas Tran</h3>
 	<hr>
 	<div class="show-content">
 		<p>
@@ -84,20 +80,30 @@
 
 		<h4 class="gallery-label">Production Gallery</h4>
 
+	<link rel="stylesheet"
+	      href="../css/glightbox.min.css">
+	<script
+		src="../js/glightbox.min.js">
+	</script>
+
 		<div class="gallery-row">
 			<div class="gallery-col">
-				<a target="_blank" href="supper.jpg">
+				<a target="_blank" href="../supper.jpg" class='glightbox'>
 					<img src="../supper.jpg" 
 					alt="An Unsettled Supper: A set dinner
 						  table with blood, and a knife
 						  in the table">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8607.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8607.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8607.jpg",
 					alt="An Unsettled Supper: A woman
 					gagging">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8486.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8486.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8486.jpg"
 					alt="An Unsettled Supper: The lower
 					     half of a man dragging
@@ -105,49 +111,65 @@
 				</a>
 			</div>
 			<div class="gallery-col">
-				<a target="_blank" href="../supper/full_res/JKS_8520.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8520.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8520.jpg"
 					alt="An Unsettled Supper: A man in a
 					     pig mask looming over a
 					     sitting man">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8516.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8516.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8516.jpg"
 					alt="An Unsettled Supper: A close-up of
 						someone stabbing a fork into a
 						piece of meat">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8574.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8574.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8574.jpg"
 					alt="An Unsettled Supper: A man hitting
 						another man's head into a table">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8383.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8383.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8383.jpg"
 					alt="An Unsettled Supper: A fully set
 						dinner table">
 				</a>
 			</div>
 			<div class="gallery-col">
-				<a target="_blank" href="../supper/full_res/JKS_8388.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8388.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8388.jpg"
 					alt="An Unsettled Supper: A fully set
 					      dinner table">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8543.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8543.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8543.jpg"
 					alt="An Unsettled Supper: A man in a
 					     pig mask and a man in a plague
 					     doctor mask looming over a sitting
 					     woman">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8603.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8603.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8603.jpg"
 					alt="An Unsettled Supper: A man
 					     unconscious or dead on a white
 					     tablecloth">
 				</a>
-				<a target="_blank" href="../supper/full_res/JKS_8608.jpg">
+				<a target="_blank"
+					href="../supper/full_res/JKS_8608.jpg"
+					class="glightbox">
 					<img src="../supper/JKS_8608.jpg"
 					alt="An Unsettled Supper: A piece of
 					     lemon drizzled in blood">
@@ -156,6 +178,9 @@
 		</div>
 	</div>
 
+	<script>
+		var lightbox = GLightbox({'loopAtEnd': true});
+	</script>
 	<!--Footer-->
 	<footer class="footer">
 		<p> &copy; 2019 | Daniel Moore </p>

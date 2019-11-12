@@ -2,9 +2,10 @@
 var menuText = ['Home', 'About', 'Portfolio', 'Resume', 'Contact'];
 var menuLinks = ['/index', '/about', '/portfolio', '/resume', '/contact'];
 var menuItems = [];
+var root="/personal-site/"
 for(var i=0; i < 5; i++) {
 	menuItems.push(document.createElement('a'));
-	menuItems[i].href = menuLinks[i];
+	menuItems[i].href = root+menuLinks[i];
 	menuItems[i].innerText = menuText[i];
 }
 

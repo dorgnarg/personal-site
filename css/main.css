@@ -35,8 +35,8 @@ body {
 }
 
 p {
-	font-family: 'Open Sans Light';
-	font-size: 1.2em;
+	font-family: 'Open Sans';
+	font-size: 1.1em;
 	margin: 0 2rem;
 	text-align: left;
 }
@@ -66,6 +66,7 @@ h2 {
 
 h3 {
 	font-size: 1.375rem;
+	margin-left: 2rem;
 }
 
 
@@ -115,7 +116,7 @@ header {	/* The whole header */
 }
 
 .nav {		/* Technically all navigators but also the header one */
-	font-family: 'Raleway', 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 nav.main-nav {	/* Header navigation menu */
@@ -178,8 +179,17 @@ nav.main-nav {	/* Header navigation menu */
 	}
 }
 
-.logo {		/* Home link/name/logo on the LHS */
+#name {		/* Home link/name/logo on the LHS */
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	line-height: 1.3;
+	font-size: 1.375rem;
 	letter-spacing: 0.25em;
+	margin-top:1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
 	float: left;
 }
 
@@ -440,15 +450,20 @@ footer p {	/* The text in the footer */
 	background-color: rgba(0,0,0,0.5);
 }
 
+.gallery-col a {
+	display: block;
+	overflow: hidden;
+}
+
 .gallery-col img { /* Each image in the gallery */
+	transition: all 0.3s ease;
 	margin-top: 8px;
 	vertical-align: middle;
 	width: 100%;
 }
 
 .gallery-col img:hover { /* Make the images get a littl bigger when you hover over them */
-	transform: scale(1.05,1.05);
-	transition: all 0.3s ease;
+	transform: scale(1.1,1.1);
 }
 
 .gallery-label {	/* The section title for the gallery */
