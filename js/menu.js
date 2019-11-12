@@ -1,6 +1,6 @@
 // Information for the menu without any of the formatting
 var menuText = ['Home', 'About', 'Portfolio', 'Resume', 'Contact'];
-var menuLinks = ['index', 'about', 'portfolio', 'resume', 'contact'];
+var menuLinks = ['/index', '/about', '/portfolio', '/resume', '/contact'];
 var menuItems = [];
 for(var i=0; i < 5; i++) {
 	menuItems.push(document.createElement('a'));
