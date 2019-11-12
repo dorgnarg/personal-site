@@ -1,4 +1,3 @@
-
 /*
  *	SITE-WIDE DECLARATIONS
  */
@@ -440,15 +439,14 @@ footer p {	/* The text in the footer */
 	flex-wrap: wrap;
 	justify-content: center;
 	justify-self: center;
-	padding: 0 4px;
-	margin: 0 2rem;
+	margin: 0 2rem 0 0;
 	width: 100%;
 }
 
 .gallery-col {	/* Each column of the gallery (container for imgs) */
 	flex: 25%;
 	max-width: 25%;
-	padding: 0 4px;
+	padding: 3px;
 	background-color: rgba(0,0,0,0.5);
 }
 
