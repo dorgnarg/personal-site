@@ -439,7 +439,7 @@ footer p {	/* The text in the footer */
  */
 
 .supper-bg {	/* Just the background for the Unsettled Supper one */
-	background-image: url("/img/supper/supper-bg2.jpg");
+	background-image: url("/img/supper-bg2.jpg");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: cover;
