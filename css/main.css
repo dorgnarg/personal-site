@@ -40,6 +40,10 @@ p {
 	text-align: left;
 }
 
+p b {
+	font-weight: 900;
+}
+
 hr {
 	margin-left: 2rem;
 	text-align: left;
@@ -95,12 +99,6 @@ a:hover {
 	transition: color .2s ease;
 	-webkit-transition: color .2s ease;
 }
-
-i {		/* Icons */
-	margin: 0 1ex;
-}
-
-
 
 
 /*
@@ -311,6 +309,7 @@ footer p {	/* The text in the footer */
 
 .about-content {/* Container for the bio/pic/etc */
 	display: flex;
+	flex: 1 0 auto;
 	justify-content: space-between;
 	align-items: flex-start;
 }
@@ -353,6 +352,7 @@ footer p {	/* The text in the footer */
 
 .portfolio {	/* Container for main page content (not including title) */
 	display: flex;
+	flex: 1 0 auto;
 	flex-direction: column;
 	align-items: space-between;
 	margin: 0 5rem 5rem 5rem;
@@ -644,6 +644,16 @@ svg:hover path {
 /*
  * 404 PAGE
  */
+
+.error-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
 .error-bg {
 	text-align: center;
 	justify-content: center;
