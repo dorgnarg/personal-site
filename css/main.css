@@ -226,7 +226,7 @@ footer p {	/* The text in the footer */
  */
 
 .home-bg {	/* Background image and container */
-	background-image: url("../ArtsyMeHalf.jpg");
+	background-image: url("/img/ArtsyMeHalf-1920x1964.jpg");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
@@ -235,6 +235,25 @@ footer p {	/* The text in the footer */
 	text-align: center;
 	justify-content: center;
 }
+
+@media only screen and (min-width: 2000px) {
+	.home-bg {
+		background-image: url("/img/ArtsyMeHalf.jpg");
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	.home-bg {
+		background-image: url("/img/ArtsyMeHalf-880x900.jpg");
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.home-bg {
+		background-image: url("/img/ArtsyMeHalf-469x480.jpg");
+	}
+}
+
 
 .content {	/* Container for the main page content & footer */
 	display: flex;
@@ -300,12 +319,14 @@ footer p {	/* The text in the footer */
 
 .about-text {	/* Container for bio text */
 	max-width: 100%;
-	flex: 1;
+	flex-basis: 50%;
 }
 
 .about-img {	/* Container for the bio image */
-	width: 100%;
-	flex: 1;
+	display: flex;
+	max-width: 100%;
+	flex-basis: 50%;
+	justify-content: center;
 }
 
 #me {		/* The actual bio image */
@@ -318,6 +339,7 @@ footer p {	/* The text in the footer */
 	}
 	.about-text {
 		max-width: 100%;
+		flex-basis: 100%;
 	}
 	.about-img {
 		max-width: 100%;
@@ -419,7 +441,7 @@ footer p {	/* The text in the footer */
  */
 
 .supper-bg {	/* Just the background for the Unsettled Supper one */
-	background-image: url("../supper/supper-bg2.jpg");
+	background-image: url("/img/supper/supper-bg2.jpg");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: cover;
@@ -480,10 +502,10 @@ footer p {	/* The text in the footer */
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
 	.gallery-col {
-		flex: 50%;
-		max-width: 50%;
+		flex: 33%;
+		max-width: 33%;
 	}
 }
 
