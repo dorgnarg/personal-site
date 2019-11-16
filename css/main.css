@@ -449,7 +449,7 @@ footer p {	/* The text in the footer */
  */
 
 .supper-bg {	/* Just the background for the Unsettled Supper one */
-	background-image: url("/img/supper-bg2.jpg");
+	background-image: url("../img/supper-bg2.jpg");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: cover;
@@ -463,6 +463,14 @@ footer p {	/* The text in the footer */
 	justify-content: center;
 	overflow: hidden;
 }
+
+#supper-top {
+	width: 85%;
+}
+#supper-bottom {
+	width: 80%;
+}
+
 
 #castcrew {
 	display: flex;
@@ -481,19 +489,16 @@ footer p {	/* The text in the footer */
 }
 
 .gallery-row {	/* Each row of the gallery (container for the columns) */
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
 	justify-self: center;
-	margin: 0 2rem 0 0;
-	width: 100%;
+	grid-template-columns: 33% 33% 33%;
+	margin: 0 2rem;
+	max-width: 100%;
 }
 
 .gallery-col {	/* Each column of the gallery (container for imgs) */
-	flex: 25%;
-	max-width: 25%;
+	max-width: 100%;
 	padding: 3px;
-	background-color: rgba(0,0,0,0.5);
 }
 
 .gallery-col a {
@@ -518,16 +523,39 @@ footer p {	/* The text in the footer */
 	line-height: 0.1;
 }
 
+@media (max-width: 1024px) {
+	#supper-top {
+		width: 70%
+	}
+	#supper-bottom {
+		width: 50%;
+	}
+}
+
+@media (max-width: 800px) {
+	#supper-top {
+		width: 65%;
+	}
+	#supper-bottom {
+		width: 45%;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.supper-bg{
 		background-image: none;
 	}
-	.gallery-col {
-		flex: 100%;
-		max-width: 100%;
+	.gallery-row {
+		grid-template-columns: 100%;
 	}
 	#castcrew {
 		flex-wrap: wrap;
+	}
+	#supper-top {
+		width: auto;
+	}
+	#supper-bottom {
+		width: auto;
 	}
 }
 
