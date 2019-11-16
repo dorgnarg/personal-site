@@ -23,16 +23,18 @@ function createMenu() {
 // Make a new vertical menu (adding newlines) when the mobile menu expand icon
 // is clicked
 function newMenu() {
-	var dropMenu = document.getElementById("new-menu");
-	if (dropMenu.innerHTML === "") {
-		document.getElementById('top-nav').classList.toggle('morphed');
-		for(var i=0; i<5; i++) {
-			dropMenu.appendChild(menuItems[i]);
-			dropMenu.appendChild(document.createElement('br'));
+	if(window.matchMedia("(max-width: 600px)").matches) {
+		var dropMenu = document.getElementById("new-menu");
+		if (dropMenu.innerHTML === "") {
+			document.getElementById('top-nav').classList.toggle('morphed');
+			for(var i=0; i<5; i++) {
+				dropMenu.appendChild(menuItems[i]);
+				dropMenu.appendChild(document.createElement('br'));
+			}
+		} else {
+			document.getElementById('top-nav').classList.toggle('morphed');
+			dropMenu.innerHTML = ""
 		}
-	} else {
-		document.getElementById('top-nav').classList.toggle('morphed');
-		dropMenu.innerHTML = ""
 	}
 }
 

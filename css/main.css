@@ -68,21 +68,27 @@ h2 {
 }
 
 h3 {
-	font-size: 1.375rem;
+	font-size: 1.75rem;
 	margin-left: 2rem;
 }
 
 
 h4 {
-	font-size: 2em;
+	font-size: 1.125rem;
 	letter-spacing: 0.125em;
 	margin-left: 2rem;
 }
 
 h5 {
-	font-size: 1.25em;
+	font-size: 0.875rem;
 	letter-spacing: 0.125em;
 	margin-left: 2rem;
+}
+
+h6 {
+	font-size: 0.875rem;
+	display: block;
+	margin: 0 2rem 0 2rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -421,6 +427,9 @@ footer p {	/* The text in the footer */
 	text-overflow: ellipsis;
 	margin-left: 1em;
 }
+.port-text {
+	margin-left: 0;
+}
 
 @media screen and (max-width: 600px) {
 	.portfolio {
@@ -452,6 +461,22 @@ footer p {	/* The text in the footer */
 	align-items: flex-start;
 	justify-content: center;
 	overflow: hidden;
+}
+
+#castcrew {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-basis: 100%;
+	width: 100%;
+	line-height: 2;
+}
+#cast {
+	flex: 1 0 auto;
+}
+#crew {
+	flex: 1 0 auto;
 }
 
 .gallery-row {	/* Each row of the gallery (container for the columns) */
@@ -486,8 +511,10 @@ footer p {	/* The text in the footer */
 	transform: scale(1.1,1.1);
 }
 
-.gallery-label {	/* The section title for the gallery */
+#gallery-label {	/* The section title for the gallery */
 	background-color: rgba(0,0,0,0.75);
+	margin-bottom: 0;
+	line-height: 0.1;
 }
 
 @media screen and (max-width: 600px) {
@@ -497,6 +524,9 @@ footer p {	/* The text in the footer */
 	.gallery-col {
 		flex: 100%;
 		max-width: 100%;
+	}
+	#castcrew {
+		flex-wrap: wrap;
 	}
 }
 
@@ -513,40 +543,25 @@ footer p {	/* The text in the footer */
  *	RESUME PAGE
  */
 
-.resume-full {
-	flex: 1 0 auto;
-}
-
-.resume-content { /* Main container for the page (excluding title) */
+.resume-content {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	max-height: 100%;
-	height: 100%;
-	justify-content: center;
 	overflow: hidden;
+	flex: 1 0 auto;
+	line-height: 2;
 }
 
-.pdf {		/* Spacing for the resume itself */
-	border: none;
-	width: 90%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-@media only screen and (max-width: 600px) {
-	.resume-bg h2{
-		margin-left: 2rem;
-	}
-	.resume-bg hr {
-		margin-left: 2rem;
-	}
-	.resume-content{
-		margin: 0 2em 0 4em;
-		text-align: center;
-	}
+.resume-item {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-bottom: 2rem;
+	line-height: 1.54;
 }
 
+.resume-content h3 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
 
 
 /*
