@@ -374,11 +374,6 @@ footer p {	/* The text in the footer */
 	background-color: #111
 }
 
-.port-item:hover {/* Each item should slowly get a little bigger on hover */
-	transform: scale(1.01,1.01);
-	transition: all 0.3s ease;
-}
-
 .port-overlay {	/* Overlay that covers port-item and changes on hover */
 	position:absolute;
 	left: 0;
@@ -388,27 +383,17 @@ footer p {	/* The text in the footer */
 	border: solid 1px black;
 }
 
+.port-item:hover {/* Each item should slowly get a little bigger on hover */
+	transform: scale(1.01,1.01);
+	transition: all 0.3s ease;
+}
+
+
 .port-overlay:hover {		/* Overlay should slowly get darker on hovr */
 	background-color: rgba(255,255,255,0.0625);
 	transition: all 0.3s ease;
 	border: 1px solid #111;
 	border-radius: 1ex;
-}
-
-.port-hidden {	/* Hidden text that gives a brief 1-2 sentence description */
-	display: none;
-	margin-left: 0;
-}
-
-.port-item:hover .port-hidden {	/* Show hidden text on hover */
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-}
-
-.port-item:hover .port-img {
-	border-radius: 1ex 0 0 1ex;
 }
 
 .port-img {	/* Image for each portfolio item */
@@ -422,7 +407,6 @@ footer p {	/* The text in the footer */
 	min-width: 50%;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-left: 1em;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin-left: 1em;
@@ -435,9 +419,15 @@ footer p {	/* The text in the footer */
 	.portfolio {
 		margin: 1rem;
 	}
-	.port-item:active .port-hidden {
-		display: none;
-
+	.port-img {
+		border-radius: 1ex;
+		margin: 0 1rem 0 1rem;
+	}
+	.port-item {
+		margin: 0;
+	}
+	.port-textbox {
+		margin: 0;
 	}
 }
 
