@@ -428,6 +428,7 @@ footer p {	/* The text in the footer */
 	}
 	.port-textbox {
 		margin: 0;
+		margin-right: 1rem;
 	}
 }
 
