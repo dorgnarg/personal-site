@@ -143,7 +143,7 @@ nav.main-nav {	/* Header navigation menu */
 	transition: .3s;
 	position: absolute;
 	top: 1.55rem;
-	right: 1rem;
+	right: 0;
 	margin-top: -1.625rem;
 }
 
@@ -356,12 +356,21 @@ footer p {	/* The text in the footer */
  *	PORTFOLIO PAGE
  */
 
-.portfolio {	/* Container for main page content (not including title) */
+.port-bg {	/* Container for main page content (not including title) */
 	display: flex;
 	flex: 1 0 auto;
 	flex-direction: column;
-	align-items: space-between;
-	margin: 0 5rem 5rem 5rem;
+}
+
+.portfolio {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 950px) {
+	.portfolio {
+		grid-template-columns: 100%
+	}
 }
 
 
@@ -369,9 +378,9 @@ footer p {	/* The text in the footer */
 	position: relative;
 	display: flex;
 	align-items: center;
-	margin: 1em;
+	margin: 1rem 2rem;
 	border-radius: 1ex;
-	background-color: #111
+	background-color: #111;
 }
 
 .port-overlay {	/* Overlay that covers port-item and changes on hover */
@@ -397,19 +406,17 @@ footer p {	/* The text in the footer */
 }
 
 .port-img {	/* Image for each portfolio item */
-	width:  100%;
 	border-radius: 1ex 0 0 1ex;
+	flex: 50%;
+	max-width: 50%;
 }
 
 .port-textbox {	/* Text box containing title and hidden text for each portfolio item */
 	display: flex;
-	flex-grow: 2;
-	min-width: 50%;
+	max-width: 40%;
 	flex-direction: column;
 	align-items: flex-start;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	margin-left: 1em;
+	margin-left: 2rem;
 }
 .port-text {
 	margin-left: 0;
@@ -421,14 +428,17 @@ footer p {	/* The text in the footer */
 	}
 	.port-img {
 		border-radius: 1ex;
-		margin: 0 1rem 0 1rem;
-	}
-	.port-item {
-		margin: 0;
+		margin: 0 0.5rem 0 1rem;
 	}
 	.port-textbox {
 		margin: 0;
 		margin-right: 1rem;
+	}
+	.port-text {
+	}
+	.port-item {
+		max-width: 100%;
+		margin: 1rem;
 	}
 }
 
