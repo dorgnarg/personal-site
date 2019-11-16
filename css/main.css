@@ -474,18 +474,16 @@ footer p {	/* The text in the footer */
 
 #castcrew {
 	display: flex;
-	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-basis: 100%;
 	width: 100%;
 	line-height: 2;
 }
 #cast {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 }
 #crew {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 }
 
 .gallery-row {	/* Each row of the gallery (container for the columns) */
