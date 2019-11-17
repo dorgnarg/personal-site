@@ -13,7 +13,7 @@
 	<!--Header-->
 	<header>
 		<nav class="main-nav">
-			<a href="/" class="logo" id="name">
+			<a href="/" id="name">
 				Daniel Moore
 			</a>
 			<div id="top-nav" class="nl nav">
@@ -33,10 +33,10 @@
 
 
 	<!--Main Content-->
-	<div class="contact-full">
-	<h2>Contact</h2>
+	<main id="contact">
+	<h1>Contact</h1>
 	<hr>
-	<div class="contact">
+	<div class="contact-content">
 		<form name="contact" netlify>
 			<label for="form-name">Name</label>
 			<input type="text" id="form-name" name="name"
@@ -50,19 +50,16 @@
 			<input type="text" id="subject" name="_subject"
 				placeholder="Subject">
 
-			<label for="message" style="display:none">Your Message</label>
-			<textarea id="message" name="_gotcha"
-					       style="display:none"></textarea>
-
 			<label for="contact-message">Message</label>
 			<textarea id="contact-message"
-				  name="message"></textarea>
+				  name="message" placeholder="Your message"></textarea>
 
 			<button type="sumbit" id="contact-submit">
 				Send
 				<span class="icon-send"></span>
 			</button>
 		</form>
+
 		<div class="contact-social">
 		<a target="_none" href="https://linkedin.com/in/dan-moore1"
 			aria-label="Linkedin">
@@ -79,8 +76,8 @@
 		</a>
 		</div>
 	</div>
+	</main>
 
-	</div>
 	<!--Footer-->
 	<footer class="footer">
 		<p> &copy; 2019 | Made by

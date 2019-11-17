@@ -10,6 +10,7 @@
 	<title>Daniel Moore :: An Unsettled Supper</title>
 </head>
 <body>
+
 	<!--Header-->
 	<header>
 		<nav class="main-nav">
@@ -33,12 +34,16 @@
 
 
 	<!--Main Content-->
-	<div class="supper-bg">
-	<h2>An Unsettled Supper</h2>
-	<h3>Written by Nicholas Tran</h3>
-	<h4>October 2019 &middot; Binary Theatre Company</h4>
+	<div id="supper-bg">
+	<main id="supper">
+	<h1>An Unsettled Supper</h1>
+	<span id="project-sub1">Written by Nicholas Tran</span>
+	<span id="project-sub2">
+		October 2019 &middot; Binary Theatre Company
+	</span>
 	<hr>
 	<div class="show-content">
+		<section title="Description">
 		<p id="supper-top">
 			<i>An Unsettled Supper</i> is an immersive atmospheric
 			horror experience co-created by Daniel Moore and
@@ -55,7 +60,6 @@
 			audience, interacting with them.
 		</p>
 		<p id="supper-bottom">
-			<br />
 			<i>An Unsettled Supper</i> made its debut for
 			<a href="https://www.binarytheatre.org">
 				Binary Theatre Company
@@ -69,48 +73,71 @@
 			the creators intend to bring versions of the show to
 			other theatres in the future.
 		</p>
-		<div id="castcrew">
-		<div id="cast">
-		<h4>Cast</h4>
-		<p>
-			Daniel Zemeida<br />
-			Kayla Santos<br />
-			Pushan Kochar<br />
-			Rhett Gajcak<br />
-			Dakota Stewart<br />
-			Aman Garg<br />
-		</p>
-		</div>
-		<div id="crew">
-		<h4>Production Designers</h4>
-		<p>
-			Stage Manager: Shradha Ravikumar<br />
-			Costume Designer: Lauren Vorhees<br />
-			Lighting Designer: Maia Gomez<br />
-			Props Masters: Chloe Cobb, April Maytorena<br />
-			Scenic Designer: Jacob Dunn<br />
-			Sound Designer: 
-			<a href="https://www.garrettru.com/">
-				Garrett Unterreiner
-			</a><br />
-			Asst. Sound Designer: Kimmy Mar
-		</p>
-		</div>
-		</div>
+		</section>
+
+		<section title="Cast and Crew" id="castcrew">
+			<h2>Cast &amp; Crew</h2>
+
+			<div id="cast">
+				<h3>Cast</h3>
+				<ul>
+					<li>Daniel Zemeida</li>
+					<li>Kayla Santos</li>
+					<li>Pushan Kochar</li>
+					<li>Rhett Gajcak</li>
+					<li>Dakota Stewart</li>
+					<li>Aman Garg</li>
+				</ul>
+			</div>
+
+			<div id="crew">
+				<h3>Production Designers</h3>
+				<dl>
+					<dt>Stage Manager</dt>
+					<dd>Shradha Ravikumar</dd>
+
+					<dt>Costume Designer</dt>
+					<dd>Lauren Vorhees</dd>
+
+					<dt>Lighting Designer</dt>
+					<dd>Maia Gomez</dd>
+
+					<dt>Props Masters</dt>
+					<dd>Chloe Cobb</dd>
+					<dd>April Maytorena</dd>
+
+					<dt>Scenic Designer</dt>
+					<dd>Jacob Dunn</dd>
+
+					<dt>Sound Designers</dt>
+					<dd>
+					<a href="https://www.garrettru.com/">
+						Garrett Unterreiner
+					</a>
+					</dd>
+					<dd>Kimmy Mar (asst.)</dd>
+				</dl>
+			</div>
+
+		</section>
+
+		<section id="gallery" title="Production Gallery">
+
+		<link rel="stylesheet"
+		      href="../css/glightbox.min.css">
+
+		<script src="../js/glightbox.min.js">
+		</script>
 
 		<div id="gallery-label">
-		<h3>Production Gallery</h3>
-		<h4>Photography by 
-			<a href="https://pohaku.work">
-				James P. Spray
-			</a>
-		</h4>
+			<h2>Production Gallery</h2>
+			<span class="project-credit">
+				Photography by 
+				<a href="https://pohaku.work">
+					James P. Spray
+				</a>
+			</span>
 		</div>
-	<link rel="stylesheet"
-	      href="../css/glightbox.min.css">
-	<script
-		src="../js/glightbox.min.js">
-	</script>
 
 		<div class="gallery-row">
 			<div class="gallery-col">
@@ -194,11 +221,13 @@
 				</a>
 			</div>
 		</div>
+		<script>
+			var lightbox = GLightbox({'loopAtEnd': true});
+		</script>
+		</section>
 	</div>
+	</main>
 
-	<script>
-		var lightbox = GLightbox({'loopAtEnd': true});
-	</script>
 	<!--Footer-->
 	<footer class="footer">
 		<p> &copy; 2019 | Made by
