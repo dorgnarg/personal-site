@@ -51,7 +51,6 @@ p {
 	font-family: 'Open Sans';
 	font-size: 1.1em;
 	margin: 2rem 0;
-	text-align: left;
 }
 
 p b {
@@ -374,11 +373,12 @@ footer p {	/* The text in the footer */
 .port-content {
 	display: grid;
 	grid-template-columns: 50% 50%;
+	width: 100%;
 }
 
 @media (max-width: 950px) {
 	.port-content {
-		grid-template-columns: 100%
+		grid-template-columns: 100%;
 	}
 }
 
@@ -433,22 +433,18 @@ footer p {	/* The text in the footer */
 }
 
 @media screen and (max-width: 600px) {
-	.port-content {
-		margin: 1rem;
-	}
 	.port-img {
 		border-radius: 1ex;
 		margin: 0 0.5rem 0 1rem;
 	}
 	.port-textbox {
-		margin: 0;
+		margin: 0.5rem;
 		margin-right: 1rem;
 	}
 	.port-text {
 	}
 	.port-item {
 		max-width: 100%;
-		margin: 1rem;
 	}
 }
 
@@ -689,7 +685,7 @@ svg:hover path {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin: 0 2.5rem;
+		margin: 0;
 		padding: 2em 7.5% 0 7.5%;
 	}
 	.contact-content button {
