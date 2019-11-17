@@ -243,7 +243,6 @@ footer p {	/* The text in the footer */
  */
 
 .home-bg {	/* Background image and container */
-	background-image: url("/img/ArtsyMeHalf-1920x1964.jpg");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
@@ -253,21 +252,38 @@ footer p {	/* The text in the footer */
 	justify-content: center;
 }
 
+.no-webp .home-bg {
+	background-image: url("/img/ArtsyMeHalf-1920x1964.jpg");
+}
+
+.webp .home-bg {
+	background-image: url("/img/ArtsyMeHalf-1920x1964.webp");
+}
+
 @media only screen and (min-width: 2000px) {
-	.home-bg {
+	.no-webp .home-bg {
 		background-image: url("/img/ArtsyMeHalf.jpg");
+	}
+	.webp .home-bg {
+		background-image: url("/img/ArtsyMeHalf.webp");
 	}
 }
 
 @media only screen and (max-width: 880px) {
-	.home-bg {
+	.no-webp .home-bg {
 		background-image: url("/img/ArtsyMeHalf-880x900.jpg");
+	}
+	.webp .home-bg {
+		background-image: url("/img/ArtsyMeHalf-880x900.webp");
 	}
 }
 
 @media only screen and (max-width: 400px) {
-	.home-bg {
+	.no-webp .home-bg {
 		background-image: url("/img/ArtsyMeHalf-469x480.jpg");
+	}
+	.webp .home-bg {
+		background-image: url("/img/ArtsyMeHalf-469x480.webp");
 	}
 }
 
@@ -497,10 +513,17 @@ footer p {	/* The text in the footer */
 }
 
 #supper-bg {	/* Just the background for the Unsettled Supper one */
-	background-image: url("../img/supper-bg2.jpg");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: cover;
+}
+
+.no-webp #supper-bg {
+	background-image: url("/img/supper-bg2.jpg");
+}
+
+.webp #supper-bg {
+	background-image: url("/img/supper-bg2.webp");
 }
 
 #supper-top {
