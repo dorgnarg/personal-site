@@ -431,16 +431,18 @@ footer p {	/* The text in the footer */
 
 .port-img {	/* Image for each portfolio item */
 	border-radius: 1ex 0 0 1ex;
-	flex: 50%;
-	max-width: 50%;
+	max-width: 90%;
+}
+
+.port-pic {
+	max-width: 90%;
 }
 
 .port-textbox {	/* Text box containing title and hidden text for each portfolio item */
 	display: flex;
-	max-width: 40%;
+	flex-basis: 50%;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 2rem;
 	font-size: 1.75rem;
 	font-family: "Open Sans", sans-serif;
 }
