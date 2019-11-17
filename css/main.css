@@ -432,6 +432,7 @@ footer p {	/* The text in the footer */
 .port-img {	/* Image for each portfolio item */
 	border-radius: 1ex 0 0 1ex;
 	max-width: 90%;
+	margin-bottom: -6px;
 }
 
 .port-pic {
@@ -577,7 +578,10 @@ footer p {	/* The text in the footer */
 }
 
 @media screen and (max-width: 600px) {
-	#supper-bg{
+	.webp #supper-bg{
+		background-image: none;
+	}
+	.no-webp #supper-bg {
 		background-image: none;
 	}
 	.gallery-row {
