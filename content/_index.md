@@ -1,7 +1,7 @@
 ---
 title: "Home"
 date: 2020-10-16T16:21:54-07:00
-draft: true
+draft: false
 ---
 # I'm Dan.
 

@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: 2020-10-16T19:41:24-07:00
-draft: true
+draft: false
 ---
 
 # Some of My Projects.

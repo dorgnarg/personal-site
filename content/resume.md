@@ -1,7 +1,7 @@
 ---
 title: "Resume"
 date: 2020-10-16T19:41:30-07:00
-draft: true
+draft: false
 ---
 # My Resume.
 
