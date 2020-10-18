@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="section">
+    <h1>Contact Me.</h1>
+    <div class="Contact">
+        <div class="contactContent">
+            {{ .Content }}
+        </div>
+        <div class="contactForm">
+            <form name="contact" method="POST"
+                        data-netlify-honeypot="bot-field" netlify>
+                <label for="form-name">Name<span class="req">*</span></label>
+                <input type="text" name="name" id="form-name" placeholder="Your Name" required="true"/>
+
+                <label for="email">Email<span class="req">*</span></label>
+                <input type="email" name="name" id="email" placeholder="Your Email" required="true"/>
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject"/>
+
+                <label for="contact-message">Message<span class="req">*</span></label>
+                <textarea id="contact-message" name="message" placeholder="Your Message" required="true">
+                </textarea>
+                <button type="submit" id="contact-submit">
+                    Send
+                </button>
+                </form>
+        </div>
+    </div>
+</section>
+{{end}}

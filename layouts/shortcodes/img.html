@@ -1,0 +1,17 @@
+<picture>
+    <source media="(max-width: 800px)" 
+            srcset="{{ .Get "src" }}-400px.webp" type="image/webp">
+    <source media="(max-width: 800px)" 
+            srcset="{{ .Get "src" }}-400px.jpg" type="image/jpeg">
+    <source media="(max-width: 1920px)" 
+            srcset="{{ .Get "src" }}-960px.webp" type="image/webp">
+    <source media="(max-width: 1920px)" 
+            srcset="{{ .Get "src" }}-960px.jpg" type="image/jpeg">
+    <source media="(min-width: 1921px)" 
+            srcset="{{ .Get "src" }}.webp" type="image/webp">
+    <source media="(min-width: 1921px)" 
+            srcset="{{ .Get "src" }}.jpg" type="image/jpeg">
+    <img loading="lazy" src="{{ .Get "src"}}-400px.jpg"
+                        alt="{{ .Get "alt" }}" 
+                        class="{{ .Get "class" }}" />
+</picture>

@@ -1,0 +1,37 @@
+baseURL = "https://danielmoore.work/"
+languageCode = "en-us"
+title = "Daniel Moore"
+theme = "dan"
+enableInlineShortcodes = true
+
+[menu]
+  [[menu.name]]
+    identifier = "home"
+    name = "Dan Moore"
+    url = "/"
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    identifier="projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+  [[menu.main]]
+    identifier="resume"
+    name = "Resume"
+    url = "/resume"
+    weight = 4
+  [[menu.main]]
+    identifier="contact"
+    name = "Contact"
+    url = "/contact"
+    weight = 5

@@ -1,0 +1,9 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline wavy;
+}
