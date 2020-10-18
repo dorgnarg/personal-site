@@ -10,4 +10,6 @@
     <link rel="canonical" href="{{ .Permalink }}" />
     {{ $styles := resources.Get "/sass/main.scss" | resources.ToCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{$styles.Permalink}}" media="screen">
+    <link rel="stylesheet"
+          href="https://code.cdn.mozilla.net/fonts/zilla-slab.css">
 </head>
