@@ -22,6 +22,12 @@ the three-part audio drama
 an educational setting, directing 10-minute and one-act plays under professor
 William Partlan.
 
+I've recently become Artistic Director, as well as a founding member, of
+[Scawwy Howwow Theatre Company](https://scawwyhowwowtheatre.com), which we will
+be using as a proving grounds to experiment with new methods, genres, and
+mediums. My first directing piece through the company is
+[untitled [redacted]](https://anchor.fm/scawwowhowwowtheatre).
+
 As a dramaturg, I've recently worked with ASU's theatre department on a recent
 production of The Snow, directed by Claire Redfield and Jillian Johnson. I was
 able to put my physics knowledge and research experience to use to help
