@@ -6,19 +6,24 @@ draft: false
 
 # About me.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pulvinar arcu, eget tempus dolor. Morbi facilisis ultricies sapien et malesuada. Sed laoreet nunc est, ut semper risus cursus vel. Vivamus finibus ipsum in maximus ultricies. Etiam ornare non risus sed volutpat. Nunc sollicitudin eros nisi. Proin nec pulvinar eros, nec posuere erat. Fusce non metus mauris. Nam eu ex ullamcorper, congue felis et, sagittis mi.
+I'm a theatre director and dramaturg based in Phoenix, AZ. I'm currently a
+senior at Arizona State University, majoring in Theatre and in Physics. My
+passions lie in contemporary works and new play development (and, in fact, all
+of the plays I've directed outside of an educational setting have been
+in-development plays). My interests and specialties are in horror, atmospheric
+work, and immersive theatre.
 
-Curabitur porttitor neque sed turpis auctor porta. Aenean eu viverra nunc, ac elementum purus. Duis ullamcorper ante nibh, nec maximus diam interdum a. Sed egestas elit est, ac placerat nibh malesuada sit amet. Donec at justo eget neque congue mollis. Aliquam erat volutpat. Nunc efficitur justo turpis, eu scelerisque sem pulvinar eu. Duis mollis urna a ultricies venenatis.
+As a director, I've done a lot of work with
+[Binary Theatre Company](https://www.binarytheatre.org), a student and new
+work-centered theatre company associated with ASU, directing the one-act
+immersive horror play [An Unsettled Supper](/projects/an-unsettled/supper) and
+the three-part audio drama 
+[There's Something Out There](/projects/theres-something). I've also worked in
+an educational setting, directing 10-minute and one-act plays under professor
+William Partlan.
 
-Aenean sagittis elementum lacus, id efficitur elit efficitur ac. Quisque vel mi sit amet mauris viverra varius. Proin mattis lectus ligula, ac elementum ante tincidunt in. Nulla eget dui maximus ante consectetur tincidunt at in metus. Etiam pretium quis nulla sit amet porttitor. Fusce commodo pretium lacus, id iaculis dui suscipit eu. Mauris pulvinar convallis arcu in luctus. Cras in magna eget nulla ultrices hendrerit eu at massa.
-
-Ut eu pellentesque lacus. Cras nec nibh sit amet nibh ornare suscipit. Vivamus a ipsum eu ante semper lobortis non non eros. Praesent ullamcorper, lectus at hendrerit luctus, dolor sem rutrum nunc, sed ornare tellus nisi sed elit. Pellentesque auctor pharetra orci vitae maximus. Aliquam et augue aliquet, faucibus turpis feugiat, sagittis est. Etiam consectetur diam sit amet neque pharetra, eu gravida turpis ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis arcu mollis, tincidunt odio et, dictum nisi. Nunc in tellus dolor. Donec ex lectus, iaculis vitae dolor nec, aliquet dapibus sapien. Nunc tellus turpis, pharetra vitae tellus et, tincidunt dictum augue. Aliquam consectetur tellus id dolor placerat, quis pellentesque neque faucibus.
-
-Duis porttitor nulla diam, non accumsan nulla iaculis eget. Proin interdum
-interdum lectus nec ultrices. Morbi interdum ligula ac ligula hendrerit
-vehicula. Pellentesque sed tristique quam. Donec vehicula, eros vitae eleifend
-faucibus, risus lectus varius est, eu ultrices mi nulla nec ante. Pellentesque
-vitae volutpat nisi, vel pretium sem. In fermentum orci tristique justo
-egestas, ac vehicula lorem accumsan. Aenean varius tellus mi. In fermentum
-tortor dolor, in convallis risus suscipit non. Lorem ipsum dolor sit amet,
-consectetur adipiscing elit.
+As a dramaturg, I've recently worked with ASU's theatre department on a recent
+production of The Snow, directed by Claire Redfield and Jillian Johnson. I was
+able to put my physics knowledge and research experience to use to help
+contexxtualize the scientific process and the philosophies related to it for
+the actors in a show centered around a young inventor.

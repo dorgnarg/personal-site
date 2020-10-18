@@ -2,4 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
+  <url>
+    <loc>https://danielmoore.work/projects/</loc>
+    <lastmod>2020-10-16T22:23:44-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/projects/theres-something/</loc>
+    <lastmod>2020-10-16T22:23:44-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/projects/an-unsettled-supper/</loc>
+    <lastmod>2020-10-16T22:21:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/projects/remotion/</loc>
+    <lastmod>2020-10-16T22:21:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/projects/untitled-redacted/</loc>
+    <lastmod>2020-10-16T22:21:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/contact/</loc>
+    <lastmod>2020-10-16T19:41:35-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/resume/</loc>
+    <lastmod>2020-10-16T19:41:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/projects/</loc>
+    <lastmod>2020-10-16T19:41:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/about/</loc>
+    <lastmod>2020-10-16T18:58:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/</loc>
+    <lastmod>2020-10-16T16:21:54-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://danielmoore.work/tags/</loc>
+  </url>
+  
 </urlset>

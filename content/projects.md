@@ -10,7 +10,7 @@ draft: false
 
 {{< projectCard 
     title="An Unsettled Supper" 
-    desc="Lorem ipsum" 
+    desc="An immersive atmospheric horror experience." 
     href="an-unsettled-supper" >}}
     {{< img
         src="/an-unsettled-supper" 
@@ -20,7 +20,7 @@ draft: false
 
 {{< projectCard 
     title="untitled [redacted]" 
-    desc="Lorem ipsum" 
+    desc="A surreal horror audio drama podcast." 
     href="untitled-redacted" >}}
     {{< img
         src="/untitled-redacted"
@@ -30,7 +30,7 @@ draft: false
 
 {{< projectCard 
     title="rEMOTION Play Festival" 
-    desc="Lorem ipsum" 
+    desc="A socially-distanced play festival." 
     href="remotion" >}}
     {{< img
         src="/remotion"
@@ -40,7 +40,7 @@ draft: false
 
 {{< projectCard 
     title="There's Something Out There" 
-    desc="Lorem ipsum" 
+    desc="A horror audio drama." 
     href="theres-something" >}}
     {{< img
         src=""
