@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import './layout.css';
 
 interface LayoutProps {
@@ -7,9 +6,7 @@ interface LayoutProps {
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => (
-  <Router>
-    {children}
-  </Router>
+  children
 );
 
 export default Layout;

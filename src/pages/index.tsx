@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { HashLink } from 'react-router-hash-link';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { StaticImage } from 'gatsby-plugin-image';
 import { ArrowDown } from 'react-feather';
 import {
@@ -13,7 +13,7 @@ import {
   Title,
 } from '../components';
 
-const HeroHashLink = styled(HashLink)`
+const HeroHashLink = styled(AnchorLink)`
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -64,9 +64,11 @@ const IndexPage = () => {
               paddingBottom: 24,
             }}
           >
-            <HeroHashLink smooth to="#projects" style={{ display: 'flex', alignItems: 'center' }}>
-              <ArrowDown style={{ paddingRight: 6 }} />
-              Scroll
+            <HeroHashLink to="#projects">
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <ArrowDown style={{ paddingRight: 6 }} />
+                Scroll
+              </div>
             </HeroHashLink>
           </div>
         </section>

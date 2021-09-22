@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-background-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-anchor-links",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -16,7 +17,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-transformer-sharp",
+      options: {
+        checkSupportedExtensions: false,
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

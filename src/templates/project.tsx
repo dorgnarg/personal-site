@@ -115,6 +115,7 @@ export const query = graphql`
     $id: String
   ) {
     content: markdownRemark(id: { eq: $id }) {
+      id
       rawMarkdownBody
       frontmatter {
         title

@@ -26,11 +26,15 @@ const FitText: FC<FitTextProps> = (props) => {
       }
     };
 
-    window.addEventListener('resize', resizeListener);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', resizeListener);
+    }
 
     return () => {
       isMounted = false;
-      window.removeEventListener('resize', resizeListener);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', resizeListener);
+      }
     }
   }, []);
 

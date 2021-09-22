@@ -1,10 +1,10 @@
 import type { FC } from 'react';
 import FitText from './FitText';
 import { ArrowDown } from 'react-feather';
-import { HashLink } from 'react-router-hash-link';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import styled from 'styled-components';
 
-const HeroHashLink = styled(HashLink)`
+const HeroHashLink = styled(AnchorLink)`
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -57,9 +57,11 @@ const Hero: FC<HeroProps> = ({ text, scrollTo = 'content' }) => (
         paddingBottom: 24,
       }}
     >
-      <HeroHashLink smooth to={`#${scrollTo}`} style={{ display: 'flex', alignItems: 'center' }}>
-        <ArrowDown style={{ paddingRight: 6 }} />
-        Scroll
+      <HeroHashLink to={`#${scrollTo}`}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <ArrowDown style={{ paddingRight: 6 }} />
+          Scroll
+        </div>
       </HeroHashLink>
     </div>
   </div>

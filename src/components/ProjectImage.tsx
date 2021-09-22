@@ -71,7 +71,7 @@ const ProjectImage: FC<ProjectImageProps> = (props) => {
                   {desc}
                 </p>
               </div>
-              {window.innerWidth > 600 && (
+              {typeof window !== 'undefined' && window.innerWidth > 600 && (
                 <svg
                   viewBox={`0 0 500 ${500 / ratio}`}
                   style={{

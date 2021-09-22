@@ -26,7 +26,7 @@ const About = () => {
   `);
 
   const heroImage = getImage(data.heroImage);
-  const small = window.matchMedia(`(max-width: ${breakpoints.md}px)`).matches;
+  const small = typeof window !== 'undefined' && window.matchMedia(`(max-width: ${breakpoints.md}px)`).matches;
 
   return (
     <Layout>
