@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
+    "gatsby-background-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -19,10 +20,26 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "markdown-pages",
+        path: "./src/markdown-pages/",
+      },
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "images",
         path: "./src/images/",
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        footnotes: true,
+        gfm: true,
+        plugins: [],
+      }
+    }
   ],
 };
