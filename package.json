@@ -29,7 +29,7 @@
     "gatsby-plugin-sitemap": "^4.7.0",
     "gatsby-plugin-styled-components": "^4.11.0",
     "gatsby-source-filesystem": "^3.11.0",
-    "gatsby-transformer-remark": "^4.8.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.11.0",
     "gbimage-bridge": "^0.1.4",
     "hastscript": "^7.0.2",
